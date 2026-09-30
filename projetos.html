@@ -4,27 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Projetos - ONG Esperança</title>
+
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
     <header>
-    <h1>ONG Esperança</h1>
+        <h1>ONG Esperança</h1>
 
-    <nav>
-        <a href="index.html">Início</a>
-        <a href="projetos.html">Projetos</a>
-        <a href="cadastro.html">Cadastro</a>
-        <a href="index.html#contato">Contato</a>
-    </nav>
-</header>
+        <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Abrir menu de navegação"
+            aria-expanded="false">
+            ☰
+        </button>
+
+        <nav aria-label="Navegação principal">
+            <a href="index.html">Início</a>
+            <a href="projetos.html">Projetos</a>
+            <a href="cadastro.html">Cadastro</a>
+            <a href="index.html#contato">Contato</a>
+        </nav>
+    </header>
 
     <main>
 
         <section>
+            <h2>Nossos Projetos</h2>
+
+            <p>
+                Conheça algumas das ações desenvolvidas pela ONG Esperança
+                para apoiar crianças, adolescentes e famílias da comunidade.
+            </p>
+        </section>
+
+
+        <section>
             <h2>Projeto Educação para Todos</h2>
+
+            <span class="badge badge-educacao">
+                Educação
+            </span>
 
             <img
                 src="img/projeto-educacao.jpg"
@@ -35,10 +59,21 @@
                 O projeto Educação para Todos oferece reforço escolar,
                 oficinas educativas e atividades para crianças e adolescentes.
             </p>
+
+            <a
+                class="botao"
+                href="cadastro.html">
+                Quero participar
+            </a>
         </section>
+
 
         <section>
             <h2>Projeto Alimentação Solidária</h2>
+
+            <span class="badge badge-alimentacao">
+                Alimentação
+            </span>
 
             <img
                 src="img/alimentacao-solidaria.jpg"
@@ -49,35 +84,64 @@
                 O projeto Alimentação Solidária arrecada e distribui alimentos
                 para famílias em situação de vulnerabilidade.
             </p>
+
+            <a
+                class="botao"
+                href="cadastro.html">
+                Quero contribuir
+            </a>
         </section>
+
 
         <section>
             <h2>Voluntariado</h2>
+
+            <span class="badge badge-voluntariado">
+                Voluntariado
+            </span>
 
             <p>
                 Pessoas interessadas podem participar das ações sociais,
                 atividades educativas e campanhas realizadas pela ONG.
             </p>
 
-            <a href="cadastro.html">Quero ser voluntário</a>
+            <a
+                class="botao"
+                href="cadastro.html">
+                Quero ser voluntário
+            </a>
         </section>
+
 
         <section>
             <h2>Doações</h2>
+
+            <div class="alerta alerta-info">
+                Toda contribuição ajuda a manter os projetos da ONG Esperança.
+            </div>
 
             <p>
                 As doações ajudam a manter os projetos e permitem que a ONG
                 continue atendendo famílias e crianças da comunidade.
             </p>
 
-            <a href="cadastro.html">Quero contribuir</a>
+            <a
+                class="botao"
+                href="cadastro.html">
+                Quero contribuir
+            </a>
         </section>
 
     </main>
 
     <footer>
-        <p>© 2026 ONG Esperança - Todos os direitos reservados.</p>
+        <p>
+            © 2026 ONG Esperança -
+            Todos os direitos reservados.
+        </p>
     </footer>
+
+    <script src="js/script.js"></script>
 
 </body>
 

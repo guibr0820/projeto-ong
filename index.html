@@ -4,29 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>ONG Esperança - Página Inicial</title>
+
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
     <header>
-    <h1>ONG Esperança</h1>
+        <h1>ONG Esperança</h1>
 
-    <nav>
-        <a href="index.html">Início</a>
-        <a href="projetos.html">Projetos</a>
-        <a href="cadastro.html">Cadastro</a>
-        <a href="index.html#contato">Contato</a>
-    </nav>
-</header>
+        <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Abrir menu de navegação"
+            aria-expanded="false">
+            ☰
+        </button>
+
+        <nav aria-label="Navegação principal">
+            <a href="index.html">Início</a>
+            <a href="projetos.html">Projetos</a>
+            <a href="cadastro.html">Cadastro</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
 
     <main>
 
         <section id="sobre">
             <h2>Sobre a ONG</h2>
 
-            <img 
+            <img
                 src="img/ong-esperanca.jpg"
                 alt="Voluntários da ONG Esperança reunidos durante uma ação social"
             >
@@ -42,30 +53,63 @@
         <section id="projetos">
             <h2>Nossos Projetos</h2>
 
-            <h3>Projeto Educação para Todos</h3>
+            <div class="cards">
 
-            <img
-                src="img/projeto-educacao.jpg"
-                alt="Crianças participando de uma atividade educacional da ONG"
-            >
+                <article class="card">
 
-            <p>
-                O projeto oferece atividades educativas, reforço escolar
-                e oficinas para crianças e adolescentes.
-            </p>
+                    <span class="badge badge-educacao">
+                        Educação
+                    </span>
+
+                    <h3>Projeto Educação para Todos</h3>
+
+                    <img
+                        src="img/projeto-educacao.jpg"
+                        alt="Crianças participando de uma atividade educacional da ONG"
+                    >
+
+                    <p>
+                        O projeto oferece atividades educativas,
+                        reforço escolar e oficinas para crianças
+                        e adolescentes.
+                    </p>
+
+                    <a
+                        class="botao"
+                        href="projetos.html">
+                        Conhecer projeto
+                    </a>
+
+                </article>
 
 
-            <h3>Projeto Alimentação Solidária</h3>
+                <article class="card">
 
-            <img
-                src="img/alimentacao-solidaria.jpg"
-                alt="Voluntários preparando alimentos para distribuição às famílias"
-            >
+                    <span class="badge badge-alimentacao">
+                        Alimentação
+                    </span>
 
-            <p>
-                O projeto realiza a arrecadação e distribuição de
-                alimentos para famílias que precisam de apoio.
-            </p>
+                    <h3>Projeto Alimentação Solidária</h3>
+
+                    <img
+                        src="img/alimentacao-solidaria.jpg"
+                        alt="Voluntários preparando alimentos para distribuição às famílias"
+                    >
+
+                    <p>
+                        O projeto realiza a arrecadação e distribuição
+                        de alimentos para famílias que precisam de apoio.
+                    </p>
+
+                    <a
+                        class="botao"
+                        href="projetos.html">
+                        Conhecer projeto
+                    </a>
+
+                </article>
+
+            </div>
         </section>
 
 
@@ -78,25 +122,55 @@
             </p>
 
             <p>
-                <strong>E-mail:</strong> contato@ongesperanca.org.br
+                <strong>E-mail:</strong>
+                contato@ongesperanca.org.br
             </p>
 
             <p>
-                <strong>Telefone:</strong> (19) 99999-1234
+                <strong>Telefone:</strong>
+                (19) 99999-1234
             </p>
 
             <p>
                 <strong>Endereço:</strong>
                 Rua das Flores, 150 - Centro - Campinas/SP
             </p>
+
+            <a
+                class="botao"
+                href="cadastro.html">
+                Quero participar
+            </a>
+        </section>
+
+
+        <section>
+            <h2>Como ajudar</h2>
+
+            <div class="alerta alerta-info">
+                Você pode participar como voluntário ou contribuir
+                com os projetos da ONG Esperança.
+            </div>
+
+            <a
+                class="botao"
+                href="cadastro.html">
+                Fazer cadastro
+            </a>
         </section>
 
     </main>
 
 
     <footer>
-        <p>© 2026 ONG Esperança - Todos os direitos reservados.</p>
+        <p>
+            © 2026 ONG Esperança -
+            Todos os direitos reservados.
+        </p>
     </footer>
+
+
+    <script src="js/script.js"></script>
 
 </body>
 
